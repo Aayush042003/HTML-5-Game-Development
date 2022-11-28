@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if Name is empty</title>
+    <script>
+        function required()
+        {
+            var empt = document.forms["form1"]["fname"].value;
+            if (empt == "")
+            {
+                alert("Please input a Value");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" action="#" onsubmit="required()">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
